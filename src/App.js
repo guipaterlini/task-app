@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <AddTask onAdd={addNewTask} />
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} setTasks={setTasks} />
     </div>
   );
 }
