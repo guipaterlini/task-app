@@ -1,3 +1,5 @@
+import "tailwindcss/tailwind.css";
+
 export default function TaskList({ tasks, setTasks }) {
   const handleCheckboxChange = (taskToChange) => {
     setTasks(
@@ -11,7 +13,7 @@ export default function TaskList({ tasks, setTasks }) {
   };
 
   return (
-    <ul>
+    <ul className="decoration-slate-50	flex	">
       {tasks.map((task) => (
         <li key={task.id}>
           <input
