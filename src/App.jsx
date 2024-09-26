@@ -1,5 +1,10 @@
-function App() {
-  return <h1>Hello World!</h1>;
-}
+import { TaskItem } from "./TaskItem";
 
-export default App;
+export function App() {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+      <TaskItem />
+    </div>
+  );
+}
