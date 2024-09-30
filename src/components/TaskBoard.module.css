@@ -8,6 +8,27 @@
   min-height: 70vh;
 }
 
-.taskBoard header {
-    display: flex;
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnNewTask {
+  background-color: var(--purple-300);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transform: 300ms;
+}
+
+.btnNewTask:hover {
+  opacity: 0.5;
+}
+
+.btnIcon {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(199deg) brightness(103%) contrast(101%);
+    width: 0.7rem;
+    height: auto;
 }
