@@ -1,5 +1,5 @@
 import { TaskItem } from "./components/TaskItem";
-import "./styles.css";
+import "./global.css";
 
 export function App() {
   return (

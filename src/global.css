@@ -1,0 +1,29 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-600: rgb(82 82 91);
+  --purple-300: #9666d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--purple-300);
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.taskBoard {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2.5rem 2.5rem;
+  margin: 3rem;
+  max-width: 450px;
+  min-height: 70vh;
+}
