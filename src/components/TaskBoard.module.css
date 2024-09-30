@@ -1,0 +1,9 @@
+.taskBoard {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2.5rem 2.5rem;
+  margin: 3rem;
+  max-width: 450px;
+  min-height: 70vh;
+}
