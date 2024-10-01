@@ -16,7 +16,7 @@ export function TaskItem(props) {
         <label htmlFor={randomId} className={styles.checkboxLabel}></label>
       </div>
 
-      <div>
+      <div className={styles.taskInfo}>
         <h2>{props.title}</h2>
         <p>{props.description}</p>
       </div>
@@ -27,3 +27,4 @@ export function TaskItem(props) {
     </div>
   );
 }
+

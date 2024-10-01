@@ -15,7 +15,7 @@ export function TaskBoard() {
 
       <TaskItem
         title="Tarefa 1"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, non!"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sequi molestiae. Voluptatum tempore veritatis maxime facere, neque velit aspernatur nisi, eaque quos reprehenderit totam nobis soluta at minima provident expedita!"
       />
       <TaskItem
         title="Tarefa 2"
