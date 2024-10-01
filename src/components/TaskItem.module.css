@@ -54,6 +54,12 @@
   opacity: 1;
 }
 
+.taskInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .taskInfo h2 {
   font-size: 1.4rem;
 }
@@ -61,7 +67,6 @@
 .taskInfo p {
   font-size: 1rem;
   color: var(--grey-600);
-  
 }
 
 .trashIconContainer {
