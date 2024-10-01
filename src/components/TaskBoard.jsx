@@ -1,14 +1,16 @@
 import { TaskItem } from "./TaskItem";
 import styles from "./TaskBoard.module.css";
 
-import btnIcon from "../assets/btnIcon.svg"
+import btnIcon from "../assets/btnIcon.svg";
 
 export function TaskBoard() {
   return (
     <div className={styles.taskBoard}>
       <div className={styles.taskHeader}>
-        <h1>To Do List</h1>
-        <button className={styles.btnNewTask}> <img className={styles.btnIcon} src={btnIcon} /> new</button>
+        <h1>To do list</h1>
+        <button className={styles.btnNewTask}>
+          <img className={styles.btnIcon} src={btnIcon} /> new
+        </button>
       </div>
 
       <TaskItem
@@ -17,6 +19,18 @@ export function TaskBoard() {
       />
       <TaskItem
         title="Tarefa 2"
+        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, non!"
+      />
+      <TaskItem
+        title="Tarefa 3"
+        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, non!"
+      />
+      <TaskItem
+        title="Tarefa 4"
+        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, non!"
+      />
+      <TaskItem
+        title="Tarefa 5"
         description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, non!"
       />
     </div>

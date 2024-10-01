@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.controlIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+  padding: 0.25rem;
+  border: none;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  display: inline-block;
+  width: 24px; /* Customize the size */
+  height: 24px; /* Customize the size */
+  background-color: #f0f0f0; /* Initial background */
+  border-radius: 4px; /* Rounded corners */
+  border: 2px solid #ccc; /* Border color */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.checkboxLabel::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px; /* Size of the check mark */
+  height: 5px;
+  border: solid #fff;
+  border-width: 2px 2px 0 0;
+  transform: translate(-50%, -50%) rotate(120deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkboxInput:checked + .checkboxLabel {
+  background-color: #4caf50; /* Color when checked */
+  border-color: #4caf50;
+}
+
+.checkboxInput:checked + .checkboxLabel::after {
+  opacity: 1;
+}
+
+.controlIcons button {
+  cursor: pointer;
+  width: 50px;
+}
