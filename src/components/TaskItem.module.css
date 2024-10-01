@@ -78,10 +78,6 @@
   transition: 300ms;
 }
 
-.trashIconContainer img {
-  width: 0.75rem;
-}
-
 .trashIconContainer:hover {
   opacity: 0.5;
 }

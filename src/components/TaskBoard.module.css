@@ -15,23 +15,19 @@
 }
 
 .btnNewTask {
+  align-items: center;
   background-color: var(--purple-300);
   border: none;
   border-radius: 8px;
   color: var(--white);
   cursor: pointer;
+  display: flex;
   font-size: 1rem;
+  gap: 2px;
   padding: 0.4rem 0.7rem;
   transform: 300ms;
 }
 
 .btnNewTask:hover {
   opacity: 0.5;
-}
-
-.btnIcon {
-  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(199deg)
-    brightness(103%) contrast(101%);
-  height: 0.6rem;
-  width: auto;
 }

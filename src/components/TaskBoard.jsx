@@ -1,7 +1,7 @@
+import { Plus } from "@phosphor-icons/react";
+
 import { TaskItem } from "./TaskItem";
 import styles from "./TaskBoard.module.css";
-
-import btnIcon from "../assets/btnIcon.svg";
 
 export function TaskBoard() {
   return (
@@ -9,7 +9,8 @@ export function TaskBoard() {
       <div className={styles.taskHeader}>
         <h1>To do list</h1>
         <button className={styles.btnNewTask}>
-          <img className={styles.btnIcon} src={btnIcon} /> new
+          <Plus size={14} weight="bold" />
+          new
         </button>
       </div>
 

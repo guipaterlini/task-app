@@ -1,6 +1,6 @@
-import styles from "./TaskItem.module.css";
+import { Trash } from "@phosphor-icons/react";
 
-import trashIcon from "../assets/trashIcon.svg";
+import styles from "./TaskItem.module.css";
 
 export function TaskItem(props) {
   const randomId = `checkbox-${Math.random().toString(36).substr(2, 9)}`;
@@ -22,7 +22,7 @@ export function TaskItem(props) {
       </div>
 
       <button className={styles.trashIconContainer}>
-        <img src={trashIcon} />
+        <Trash size={20} color="#9666d9" weight="bold" />
       </button>
     </div>
   );
