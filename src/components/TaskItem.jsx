@@ -7,24 +7,23 @@ export function TaskItem(props) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.controlIcons}>
-        <div className={styles.checkboxContainer}>
-          <input
-            type="checkbox"
-            id={randomId}
-            className={styles.checkboxInput}
-          ></input>
-          <label htmlFor={randomId} className={styles.checkboxLabel}></label>
-        </div>
-        <button>
-          <img src={trashIcon} />
-        </button>
+      <div className={styles.checkboxContainer}>
+        <input
+          type="checkbox"
+          id={randomId}
+          className={styles.checkboxInput}
+        ></input>
+        <label htmlFor={randomId} className={styles.checkboxLabel}></label>
       </div>
 
       <div>
         <h2>{props.title}</h2>
         <p>{props.description}</p>
       </div>
+
+      <button className={styles.trashIconContainer}>
+        <img src={trashIcon} />
+      </button>
     </div>
   );
 }
