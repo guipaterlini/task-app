@@ -2,6 +2,7 @@ import { Plus } from "@phosphor-icons/react";
 
 import { TaskItem } from "./TaskItem";
 import styles from "./TaskBoard.module.css";
+import { NewTask } from "./NewTask";
 
 export function TaskBoard() {
   return (
@@ -13,6 +14,8 @@ export function TaskBoard() {
           new
         </button>
       </div>
+
+      <NewTask />
 
       <TaskItem
         title="Tarefa 1"
